@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: VmwareProviderAccess
+metadata:
+  name: generic_provider_access
+spec:
+  secret:
+    VSPHERE_SERVER: 172.29.110.6
+    VSPHERE_USER: root
+    VSPHERE_PASSWORD: r3v3nue!
+    VSPHERE_ALLOW_UNVERIFIED_SSL: 'true'
+  

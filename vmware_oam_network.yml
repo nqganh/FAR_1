@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: VmwareNetwork
+metadata:
+  name: generic_oam_network
+dependencies:
+  providers:
+  - name: generic_provider_access
+spec:
+  create_network: true
+  name: OAM
+  switchName: vSwitch1
+  portGroupName: OAM
+  activeNics: ["vmnic4"]
+  subnet:
+    name: OAM
+    ipv4Netmask: 255.255.255.0
+    ipv4Gateway: 172.29.111.1
+    ipv6Gateway: 12::1
+    ipv6Prefix: 12
+    vlanId: 0
