@@ -7,12 +7,10 @@ dependencies:
   - name: generic_provider_access
 spec:
   create_network: true
-  name: MEDIA
-  switchName: vSwitch1
+  switchName: vSwitch3
   portGroupName: MEDIA
   activeNics: ["vmnic6"]
   subnet:
-    name: MEDIA
     ipv4Netmask: 255.255.255.128
     ipv4Gateway: 172.29.112.129
     ipv6Gateway: 12::1

@@ -7,12 +7,10 @@ dependencies:
   - name: generic_provider_access
 spec:
   create_network: true
-  name: SIG
   switchName: vSwitch2
   portGroupName: SIG
   activeNics: ["vmnic5"]
   subnet:
-    name: SIG
     ipv4Netmask: 255.255.255.128
     ipv4Gateway: 172.29.112.1
     ipv6Gateway: 12::1
